@@ -72,6 +72,13 @@ This system uses machine learning to:
 <img width="1886" height="895" alt="image" src="https://github.com/user-attachments/assets/3319a064-7fda-4bf1-b177-06137787ce0d" />
 
 
+
+
+## 🏗️ Project Structure
+
+<img width="232" height="605" alt="image" src="https://github.com/user-attachments/assets/eb41c46b-c0ce-4056-9ed9-6b94659b222f" />
+
+
 ## ▶️ How to Run the Project
 
 Follow these steps to run the application locally.
@@ -81,11 +88,158 @@ Follow these steps to run the application locally.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/invoice-intelligence.git
-cd invoice-intelligence
+https://github.com/JituPradhan123/Freight-Cost-Prediction-and-Invoice-Flagging-using-ML.git
+```
+
+### 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+Activate:
+
+**Windows**
+
+```
+venv\Scripts\activate
+```
+
+**Mac/Linux**
+
+```
+source venv/bin/activate
+```
 
 ---
 
-## 🏗️ Project Structure
+### 3️⃣ Install Dependencies
 
-<img width="232" height="605" alt="image" src="https://github.com/user-attachments/assets/eb41c46b-c0ce-4056-9ed9-6b94659b222f" />
+```
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 4️⃣ Train Models (First Time Only)
+
+```
+python feright_cost_prediction/train.py
+python invoice_flagging/train_flag.py
+```
+
+---
+
+### 5️⃣ Run Streamlit App
+
+```
+python -m streamlit run app.py
+```
+
+👉 Open in browser:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 🧪 Run Individual Scripts
+
+### Freight Model
+
+```
+python inference/predict_freight.py
+```
+
+### Invoice Flag Model
+
+```
+python inference/predict_invoice_flag.py
+```
+
+---
+
+## 🧾 Sample Input
+
+### Freight Prediction
+
+```
+{
+  "Quantity": [50],
+  "Dollars": [5000]
+}
+```
+
+---
+
+### Invoice Flag Prediction
+
+```
+{
+  "invoice_quantity": [50],
+  "invoice_dollars": [5000],
+  "Freight": [200],
+  "total_item_quantity": [50],
+  "total_item_dollars": [4800]
+}
+```
+
+---
+
+## 📊 Output
+
+* Freight → Numeric value
+* Invoice Flag →
+
+  * ✅ Safe
+  * 🚨 Risky
+
+---
+
+## ⚠️ Important Notes
+
+* Use same **scikit-learn version** for training & inference
+* Feature names must match exactly
+* Always run project from root folder
+
+---
+
+## 🛠️ Troubleshooting
+
+### ❌ Model not found
+
+➡️ Run training scripts again
+
+---
+
+### ❌ sklearn error
+
+```
+pip show scikit-learn
+```
+
+---
+
+### ❌ Streamlit issue
+
+```
+python -m streamlit run app.py
+```
+
+---
+
+## 🚀 Future Improvements
+
+* Auto pipeline (no manual freight input)
+* Dashboard analytics
+* Cloud deployment
+
+---
+
+## 👨‍💻 Author
+
+**Jitu Pradhan**
+
+
