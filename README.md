@@ -51,6 +51,9 @@ This system uses machine learning to:
 - Output:
   - Predicted Freight Cost
 
+<img width="1877" height="925" alt="image" src="https://github.com/user-attachments/assets/98a24d6d-144b-4c53-8002-62977ab0d652" />
+
+
 ---
 
 ### 2. Invoice Flag Model
@@ -65,6 +68,9 @@ This system uses machine learning to:
 - Output:
   - 0 → Safe
   - 1 → Flagged (Manual Review Required)
+
+<img width="1886" height="895" alt="image" src="https://github.com/user-attachments/assets/3319a064-7fda-4bf1-b177-06137787ce0d" />
+
 
 ---
 
