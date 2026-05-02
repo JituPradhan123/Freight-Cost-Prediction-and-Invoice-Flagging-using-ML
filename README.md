@@ -1,4 +1,4 @@
-# 📊 Vendor Invoice Intelligence Portal
+# 📊 Vendor Invoice Intelligence Portal (Freight-Cost-Prediction-and-Invoice-Flagging-using-ML)
 
 An AI-powered web application that predicts **freight cost** and flags **risky invoices** using machine learning.
 
