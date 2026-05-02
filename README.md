@@ -72,6 +72,18 @@ This system uses machine learning to:
 <img width="1886" height="895" alt="image" src="https://github.com/user-attachments/assets/3319a064-7fda-4bf1-b177-06137787ce0d" />
 
 
+## ▶️ How to Run the Project
+
+Follow these steps to run the application locally.
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/invoice-intelligence.git
+cd invoice-intelligence
+
 ---
 
 ## 🏗️ Project Structure
