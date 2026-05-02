@@ -70,33 +70,4 @@ This system uses machine learning to:
 
 ## 🏗️ Project Structure
 
-invoice-intelligence/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── models/
-│   ├── predict_freight_model.pkl
-│   ├── predict_flag_invoice.pkl
-│   └── scaler.pkl
-│
-├── inference/
-│   ├── __init__.py
-│   ├── predict_freight.py
-│   └── predict_invoice_flag.py
-│
-├── feright_cost_prediction/
-│   ├── __init__.py
-│   ├── train_freight.py
-│   ├── data_preprocessing.py
-│   └── modeling.py
-│
-├── invoice_flag_prediction/
-│   ├── __init__.py
-│   ├── train_flag.py
-│   ├── data_preprocessing.py
-│   └── modeling.py
-│
-├── data/
-    └── inventory.db
+<img width="232" height="605" alt="image" src="https://github.com/user-attachments/assets/eb41c46b-c0ce-4056-9ed9-6b94659b222f" />
